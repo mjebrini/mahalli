@@ -48,6 +48,7 @@ class SetupCommerceSite implements ShouldQueue
         $command = implode(" ", [
             "wp core download",
             "--locale=en_US",
+            "--allow-root",
             "--path=" . $site_dir
         ]);
 
@@ -58,6 +59,7 @@ class SetupCommerceSite implements ShouldQueue
         $command = implode(" ", [
             "cd " . $site_dir . " && ",
             "wp config create",
+            "--allow-root",
             "--dbname=mahalli_" . $site->admin_user ,
             "--dbuser=" . env('DB_USERNAME','mahalli_account'),
             "--dbpass=" . env('DB_PASSWORD','zP4VvD6WTeE2Wz4a'),
@@ -72,6 +74,7 @@ class SetupCommerceSite implements ShouldQueue
         $command = implode(" ", [
             "cd " . $site_dir . " && ",
             "wp core install",
+            "--allow-root",
             "--url=" . $site->site_domain ,
             "--title=\"" . $site->site_title . "\"" ,
             "--admin_user=" . $site->admin_user ,

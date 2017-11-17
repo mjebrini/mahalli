@@ -46,7 +46,7 @@ class SetupCommerceTheme implements ShouldQueue
         // FIRST COMMAND
         $command = implode(" ", [
             "cd " . $site_dir . " && ",
-            "wp plugin install woocommerce --activate"
+            "wp plugin install woocommerce --activate --allow-root"
         ]);
 
         $output = "";
@@ -55,7 +55,7 @@ class SetupCommerceTheme implements ShouldQueue
         // SECOND COMMAND
         $command = implode(" ", [
             "cd " . $site_dir . " && ",
-            "wp plugin install " . $bop_plugin 
+            "wp plugin install " . $bop_plugin . " --allow-root"
         ]);
 
         $output = "";
