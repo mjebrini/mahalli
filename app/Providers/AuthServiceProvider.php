@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap\Providers;
+namespace Mahalli\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'Handicap\Model' => 'Handicap\Policies\ModelPolicy',
+        'Mahalli\Model' => 'Mahalli\Policies\ModelPolicy',
     ];
 
     /**

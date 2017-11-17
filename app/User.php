@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap;
+namespace Mahalli;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -26,4 +26,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * Get the site belong to user.
+     */
+    public function site()
+    {
+        return $this->hasOne('Mahalli\Models\Site', 'user_id', 'id');
+    }
 }

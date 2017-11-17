@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Handicap\User::class,
+        'model' => Mahalli\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

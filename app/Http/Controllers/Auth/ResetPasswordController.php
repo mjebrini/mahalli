@@ -1,8 +1,8 @@
 <?php
 
-namespace Handicap\Http\Controllers\Auth;
+namespace Mahalli\Http\Controllers\Auth;
 
-use Handicap\Http\Controllers\Controller;
+use Mahalli\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

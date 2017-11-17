@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap\Providers;
+namespace Mahalli\Providers;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;

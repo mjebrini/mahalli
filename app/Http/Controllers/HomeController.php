@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap\Http\Controllers;
+namespace Mahalli\Http\Controllers;
 
 use Illuminate\Http\Request;
 

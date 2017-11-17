@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap\Notifications;
+namespace Mahalli\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification as BaseNotification;

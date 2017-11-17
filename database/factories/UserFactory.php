@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(Handicap\User::class, function (Faker $faker) {
+$factory->define(Mahalli\User::class, function (Faker $faker) {
     static $password;
 
     return [

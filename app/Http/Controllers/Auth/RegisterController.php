@@ -1,9 +1,9 @@
 <?php
 
-namespace Handicap\Http\Controllers\Auth;
+namespace Mahalli\Http\Controllers\Auth;
 
-use Handicap\User;
-use Handicap\Http\Controllers\Controller;
+use Mahalli\User;
+use Mahalli\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -58,7 +58,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \Handicap\User
+     * @return \Mahalli\User
      */
     protected function create(array $data)
     {

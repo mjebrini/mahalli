@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Handicap\User::class,
+            'model' => Mahalli\User::class,
         ],
 
         // 'users' => [

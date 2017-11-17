@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap\Events;
+namespace Mahalli\Events;
 
 abstract class Event
 {

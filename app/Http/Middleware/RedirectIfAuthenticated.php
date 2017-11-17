@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap\Http\Middleware;
+namespace Mahalli\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

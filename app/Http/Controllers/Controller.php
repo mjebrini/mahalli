@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap\Http\Controllers;
+namespace Mahalli\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

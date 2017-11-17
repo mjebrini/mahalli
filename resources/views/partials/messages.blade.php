@@ -14,7 +14,7 @@
                 <li><!-- start message -->
                     <a href="#">
                         <div class="pull-left">
-                            <img src="{{ $faker->imageUrl(160,160) }}" class="img-circle" alt="User Image">
+                            <img src="{{ Gravatar::src(Auth::user()->email, 160) }}" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                             Support Team

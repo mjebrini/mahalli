@@ -1,6 +1,6 @@
 <?php
 
-namespace Handicap\Http\Middleware;
+namespace Mahalli\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 
