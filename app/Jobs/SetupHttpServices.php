@@ -80,13 +80,13 @@ class SetupHttpServices implements ShouldQueue
         fwrite($nginx_file, $nginx_config);
         fclose($nginx_file);
 
-        // SECOND COMMAND
-        $command = "sudo nginx -s reload"  ;
-
+        $commnad = "cd ". $server_path . " && sudo chown -R www-data:www-data .";
+        
         $output = "";
         exec($command, $output); 
 
-        $commnad = "cd $server_path && sudo chown -R www-data:www-data .";
+        // SECOND COMMAND
+        $command = "sudo nginx -s reload"  ;
 
         $output = "";
         exec($command, $output); 
