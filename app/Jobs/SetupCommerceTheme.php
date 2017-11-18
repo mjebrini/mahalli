@@ -55,7 +55,7 @@ class SetupCommerceTheme implements ShouldQueue
         // second COMMAND
         $command = implode(" ", [
             "cd " . $site_dir . " && ",
-            "wp theme install storefront --allow-root"
+            "wp theme install storefront --activate --allow-root"
         ]);
 
         $output = "";

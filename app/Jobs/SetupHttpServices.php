@@ -86,6 +86,11 @@ class SetupHttpServices implements ShouldQueue
         $output = "";
         exec($command, $output); 
 
+        $commnad = "cd $server_path && sudo chown -R www-data:www-data .";
+
+        $output = "";
+        exec($command, $output); 
+
         $site->status = $site::READY;
         $site->save();
 
